@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bikini Bottom Scrollytelling Map</title>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="lib/scrollmap.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="content">
+
+    <!-- Title -->
+    <div class="row" style="background-image:url(assets/title.png); background-size:cover;">
+        <div class="center title">
+            <h1>Bikini Bottom Map</h1>
+            <p class="author">Sabine Dolan-Gaschignard</p>
+        </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="row">
+        <div class="center">
+            <p>This Mapbox style is inspired by my favorite childhood TV show, SpongeBob SquarePants.</p>
+        </div>
+    </div>
+
+    <!-- Side-by-side -->
+    <div class="row side-by-side">
+        <div class="left">
+            <img class="fit" src="assets/inspiration.png" alt="Inspiration">
+        </div>
+        <div class="right">
+            <p class="vert-center">I drew inspiration from the bright colors, sandy texture, and iconic flowers in the sky.</p>
+        </div>
+    </div>
+
+    <!-- Scroll container -->
+    <div class="scroll-container">
+        <div class="background-item">
+            <img src="assets/asheville.png" data-slide="1" class="fill">
+            <img src="assets/newyork.png" data-slide="2" class="fill hidden">
+            <img src="assets/brisbane.png" data-slide="3" class="fill hidden">
+            <img src="assets/morbihan.png" data-slide="4" class="fill hidden">
+        </div>
+        <div class="foreground-item">
+            <div class="row"><div class="center background-transparent rounded"><p class="no-margin">Let's explore some different geographies. First, Asheville, North Carolina. Notice the pineapples representing cities.</p></div></div>
+            <div class="row"><div class="center background-transparent rounded"><p class="no-margin">New York City, where we see lots of bright pink in the streets.</p></div></div>
+            <div class="row"><div class="center background-transparent rounded"><p class="no-margin">Brisbane, Australia, where you can see the iconic SpongeBob flowers to the east and the sandy expanse to the west.</p></div></div>
+            <div class="row"><div class="center background-transparent rounded"><p class="no-margin">And, Golf of Morbihan, France, with the bright green natural areas inspired by SpongeBob's jellyfishing and the SpongeBob font for the water labels.</p></div></div>
+        </div>
+    </div>
+
+    <!-- Slideshow -->
+    <div class="row">
+        <div class="center-wide">
+            <p class="map-note">Let's see how the details change at different zoom levels.</p>
+            <div class="slideshow-container">
+                <div class="slide"><img src="assets/scale1.png" class="scale-img"><p class="caption">A zoomed-out view of the Bikini Bottom style.</p></div>
+                <div class="slide"><img src="assets/scale2.png" class="scale-img"><p class="caption">A mid-scale view centered on Bayonne, France.</p></div>
+                <div class="slide"><img src="assets/scale3.png" class="scale-img"><p class="caption">A large-scale view of the Bayonne region.</p></div>
+                <div class="slide"><img src="assets/scale4.png" class="scale-img"><p class="caption">The Bayonne city center.</p></div>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+                <div class="slideshow-dots">
+                    <span class="dot" id="1"></span>
+                    <span class="dot" id="2"></span>
+                    <span class="dot" id="3"></span>
+                    <span class="dot" id="4"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mapbox embed -->
+    <div class="row">
+        <div class="center-wide map-container">
+            <p class="map-note">Here's the full map style!</p>
+            <iframe src="https://api.mapbox.com/styles/v1/dolangaschig/cmh8a6037001e01qybdii8vcd.html?title=false&access_token=pk.eyJ1IjoiZG9sYW5nYXNjaGlnIiwiYSI6ImNtZ2t6bXFxZTEyYmQybG92Y3V0cHo3NWYifQ.mUCeUq7v5RjctXrbkODC1g&zoomwheel=false#8/48.7/2.4" title="Bikini Bottom" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Credits -->
+    <div class="row no-margin">
+        <div class="center">
+            <div class="credits">
+                <p><b>Credits:</b></p>
+                <p>Map created with Mapbox Studio</p>
+                <p>Data from OpenStreetMap</p>
+                <p>SpongeBob flowers from SVGBees</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="lib/scrollmap.js"></script>
+</body>
+</html>

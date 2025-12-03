@@ -1,0 +1,157 @@
+/** NAVBAR **/
+
+.navbar {
+    background-color: #1e4d2b!important;
+    border-radius: 0;
+}
+
+/* Navbar title */
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Navbar hover effects */
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #ffcc80 !important;
+    text-decoration: none;
+}
+
+/* Navbar links */
+.nav-link {
+    color: #fff !important;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Navbar collapsed (hamburger) styles */
+.navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+    background-color: #1e4d2b;
+    border-radius: 4px;
+    border: 1px solid;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    background-color: #245b33;
+    color: #242424;
+    border-color: #fff;
+}
+
+/** JUMBOTRON **/
+
+.jumbotron {
+    background-image: url("../assets/contour.png");
+    background-size: cover;      
+    background-repeat: no-repeat; 
+    background-position: center; 
+    
+    text-align: center;
+    color: #755026;
+    padding: 3%;
+    border-radius: 0px;
+}
+
+.jumbotron h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow:
+        0 0 6px rgba(255, 255, 255, 0.7),
+}
+
+
+.jumbotron p {
+    font-size: 21px;
+    text-shadow:
+        0 0 6px rgba(255, 255, 255, 0.7),
+}
+
+
+.img-responsive{
+    width:100%;
+}
+
+/** CARD **/
+
+.card {
+    background-color: #f0ebe3;
+    border-color: #d7d1c9;
+    border-width: 1px;
+    width: 100%;
+}
+
+.card:hover {
+    border-color: #1e4d2b;
+}
+
+/** Basic Text Styles **/
+
+#about-world {
+    max-width: 100%;
+}
+
+.resume h3 {
+    font-weight: bold;
+}
+
+
+hr {
+    border-color: white;
+    border-width: 2px;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: #1e4d2b;
+}
+
+a:hover {
+    color: #ffcc80;
+}
+
+.container{
+    padding:25px 0;
+}
+
+/**
+body {
+
+    font-family: 'Georgia', serif;
+    background-color: #f7f1fa;
+    color: #242424;
+}
+**/
+
+
+body {
+
+    font-family: 'Garamond', serif;
+    background-color: #F9F7EA;
+    color: #242424;
+}
+
+/**
+#about-image {
+    border-radius: 50%;
+    object-fit: cover;
+}
+**/
+
+.btn-primary {
+    background-color: #755026;
+    border-color: #755026;     
+}
+
+.btn-primary:hover {
+    background-color: #684722;
+    border-color: #684722;
+}
